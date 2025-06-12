@@ -2,5 +2,8 @@
 *.mp4
 *.odt#
 *.pdf
-*.docx
+*.docx#
 *.odt
+*.zip
+*.tar.gz
+Labs/Lab1/Lab01_Report.docx
