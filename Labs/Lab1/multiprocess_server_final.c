@@ -21,6 +21,9 @@ void handle_client(int sock)
     char buffer[BUFFER_SIZE];
     int n;
 
+    // Simulate long processing time
+    sleep(25); // ⬅ Add this so that program will sleep for 10 seconds
+
     // Clear buffer
     memset(buffer, 0, BUFFER_SIZE);
 
@@ -48,6 +51,7 @@ void handle_client(int sock)
     {
         write(sock, buffer, strlen(buffer));
     }
+    printf("Client requested: %s\n", buffer);
 
     fclose(fp);
     close(sock);
